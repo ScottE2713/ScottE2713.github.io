@@ -10,14 +10,21 @@ function headerHTML() {
     let header = `
         <nav>
             <h1>Welcome to My CS499 ePortfolio</h1>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Enhancements ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="milestone-one.html">Enhancement One</a></li>
+                        <li><a href="milestone-two.html">Enhancement Two</a></li>
+                        <li><a href="milestone-three.html">Enhancement Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-        `;
-
-        return header;
+    `;
+    return header;
 }
 
 function footerHTML() {

@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CS499 ePortfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="header-and-footer-script.js"></script>
 </head>
 <body>
     <header id="header"></header>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About Me and Self-Assessment</h2>
         <p>Hello! My name is Scott Enos. I am a Computer Science student passionate about software engineering, data structures, and secure development practices. Welcome to my ePortfolio!</p>
     </section>
 
+    <section id="self-assessment">
+        <h2>Professional Self-Assessment</h2>
+
+        <h3>Introduction and Program Reflection</h3>
+        <p>
+            Completing the Software Engineering program at SNHU has been a transformative experience. From foundational courses in programming and algorithms to more advanced topics like secure coding and software reverse engineering, the program has allowed me to grow in both technical skill and professional confidence.
+        </p>
+
+        <h3>Skills, Strengths, and Outcomes Demonstrated</h3>
+        <p>
+            The ePortfolio demonstrates my ability to design, build, and secure professional-grade software. I chose a single C++ project (<code>AdvisingProgram.cpp</code>) and enhanced it across three key categories: software design and engineering, algorithms and data structures, and databases. These enhancements highlight my growth and directly align with the five program outcomes.
+        </p>
+        <p>
+            For example, I refactored the code to use a modular structure with multiple source and header files, applied defensive programming, and introduced robust input validation. This showcases my ability to deliver maintainable, scalable software systems—fulfilling the outcomes related to software design and professional coding practices.
+        </p>
+        <p>
+            In the second enhancement, I implemented a prefix-based search feature on the Binary Search Tree to demonstrate algorithmic thinking, recursive traversal logic, and string normalization. In the final enhancement, I integrated a secure SQLite database with parameterized queries and a DatabaseAdapter class. This provided full CRUD functionality and persistent storage, satisfying both the security and database-related outcomes.
+        </p>
+
+        <h3>Communication, Collaboration, and Professionalism</h3>
+        <p>
+            Throughout the program, I have improved my ability to communicate ideas clearly, both in writing and through video presentations. The code review portion of my capstone allowed me to explain the program structure and proposed change. These communication skills are essential in professional environments, especially during code reviews, team planning, and stakeholder presentations.
+        </p>
+
+        <h3>Career Goals and Industry Readiness</h3>
+        <p>
+            This program has solidified my goal of becoming a software engineer, and I now feel equipped to contribute in both startup and enterprise environments. I currently work in an engineering role; however, this ePortfolio and degree still reinforce my qualifications and commitment. Through this project, I’ve learned to architect solutions that are secure, user-friendly, and maintainable. I can now confidently take a project from planning to deployment using professional tools and practices.
+        </p>
+        <h3>Alignment With Course Outcomes</h3>
+        <p>
+        This capstone project has allowed me to demonstrate all five CS 499 course outcomes:
+        </p>
+        <ul>
+        <li><strong>Collaborative Environments:</strong> Through my code review and clear documentation, I showed how to engage with peers and stakeholders to improve software solutions.</li>
+        <li><strong>Professional Communication:</strong> I delivered coherent technical content through written narratives and a recorded code review video, clearly explaining my design decisions and development approach.</li>
+        <li><strong>Algorithmic Problem Solving:</strong> My prefix-based BST search enhancement addressed real-world search needs using recursive traversal and string normalization.</li>
+        <li><strong>Innovative Techniques and Tools:</strong> The introduction of modular code structure, reusable utility components, and a secure SQLite integration shows my ability to use industry-standard development techniques.</li>
+        <li><strong>Security Mindset:</strong> Parameterized queries, strong input validation, and error-handling logic were used throughout to reinforce secure coding practices and data integrity.</li>
+        </ul>
+
+    </section>
+
+    <section id="code-review">
+        <h2>Code Review</h2>
+        <p>In this section, I will be reviewing the original version of my capstone artifact. I will be analyzing the code's structure, functionality, and areas for improvement. I will also be outlining the enhancements that are included in the final version of my artifact. As noted on the video, I planned to implement across software design, data structures, and database integration.</p>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cdJevxQ3jgw?si=xUqXawwQoBYqmBz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="artifact-links">
+        <h3>Download Artifacts</h3>
+        <div class="project">
+            <p>
+                <strong>Original Version:</strong><br>
+                <a href="downloads/BinarySearchTree%20(Original).cpp" download>Download BinarySearchTree (Original).cpp</a>
+            </p>
+            <p>
+                <strong>Enhanced Version:</strong><br>
+                <a href="downloads/Final%20Artifact.zip" download>Download Final Artifact (Full Enhanced Project)</a>
+            </p>
+        </div>
+    </section>
+
     <section id="projects">
-        <h2>Highlighted Projects</h2>
+        <h2>Highlighted Enhancements</h2>
+
         <div class="project">
-            <h3>Software Engineering Project</h3>
-            <p>Refactored a task management application to use the MVC pattern and added unit testing.</p>
+            <h3><a href="milestone-one.html">Software Design and Engineering</a></h3>
+            <p>Refactored a C++ course catalog application by introducing modular class design, input validation, exception handling, and a utility module to improve maintainability and code structure.</p>
         </div>
+
         <div class="project">
-            <h3>Algorithms Optimization</h3>
-            <p>Enhanced sorting algorithms with advanced optimizations and benchmark comparisons.</p>
+            <h3><a href="milestone-two.html">Algorithms and Data Structures</a></h3>
+            <p>Enhanced the performance and structure of a Binary Search Tree-based course lookup system, improving traversal and search functionality for more efficient data handling.</p>
         </div>
+
         <div class="project">
-            <h3>Database Enhancements</h3>
-            <p>Implemented stored procedures, triggers, and performance indexing for an inventory system.</p>
+            <h3><a href="milestone-three.html">Database Integration</a></h3>
+            <p>Replaced file-based storage with an SQLite integration using a secure, parameterized query system to manage course data and ensure persistence.</p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: scott.enos2@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/scotte2713" target="_blank">ScottE2713</a></p>
+        <p>You can reach me via email or check out my work on GitHub:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:scott.enos2@gmail.com">scott.enos2@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/scotte2713" target="_blank">ScottE2713</a></li>
+        </ul>
     </section>
 
     <footer id="footer"></footer>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 4 – Database Integration</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="header-and-footer-script.js"></script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <section class="narrative">
+    <h2>Milestone 4: Enhancement Three – Database Integration</h2>
+
+    <h3>1. Artifact Description</h3>
+    <p>
+      The artifact that I picked for the third enhancement is <strong>AdvisingProgram.cpp</strong>. It is a C++ console application that serves as an advising program to track offered courses along with their prerequisite courses. The program was originally created for CS-300 and was designed to load and display course data from a flat file using a Binary Search Tree (BST).
+    </p>
+    <p>
+      Initially, the program only supported reading from a static file, with no ability to modify data through the application. I enhanced the program by integrating a SQLite database, which enables full Create, Read, Update, and Delete (CRUD) functionality with persistent storage.
+    </p>
+
+    <h3>2. Justification and Enhancements</h3>
+    <p>
+      I selected this artifact because it demonstrates my ability to extend an existing C++ application by integrating secure, database-driven functionality. These enhancements showcase my skills in software extension, SQL integration, and secure query practices.
+    </p>
+    <p>
+      I created a <strong>DatabaseAdapter</strong> class to encapsulate all SQLite operations using reusable, parameterized methods. The original file-loading feature was preserved to allow bulk importing of new data. I added menu options for adding, editing, deleting, and viewing records from the database, and ensured that the BST remained synchronized with the database for in-memory searching. All queries are securely handled to prevent SQL injection.
+    </p>
+
+    <h3>3. Outcome Alignment</h3>
+    <p>
+      This enhancement supports multiple CS499 outcomes. It demonstrates my ability to design and implement computing solutions using appropriate tools by replacing the flat file with a relational SQLite database. It also highlights my use of innovative techniques through parameterized queries and safe adapter design. Finally, it reflects my secure development mindset by applying validation, safe memory use, and SQL injection prevention.
+    </p>
+
+    <h3>4. Reflection on Enhancement Process</h3>
+    <p>
+      Through this enhancement, I gained a deeper understanding of SQL integration and database-aware architecture. I carefully planned the transition from a file-based system to a persistent model, while preserving the in-memory BST structure introduced in earlier enhancements.
+    </p>
+    <p>
+      One challenge was ensuring that the new database functionality did not interfere with the existing BST logic. I also deepened my knowledge of secure query logic using <code>sqlite3_prepare_v2</code> and <code>sqlite3_bind_text</code>, reinforcing best practices to avoid raw SQL execution.
+    </p>
+    <p>
+      In conclusion, this enhancement helped me deliver a more scalable, secure, and professional-quality C++ application that effectively uses a relational database.
+    </p>
+  </section>
+
+  <section id="artifact-links">
+    <h3>Download Artifacts</h3>
+    <div class="project">
+        <p>
+        <strong>Original Version:</strong><br>
+        <a href="downloads/BinarySearchTree%20(Original).cpp" download>Download BinarySearchTree (Original).cpp</a>
+        </p>
+        <p>
+        <strong>Enhanced Version:</strong><br>
+        <a href="downloads/Final%20Artifact.zip" download>Download Final Artifact (Full Enhanced Project)</a>
+        </p>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+</body>
+</html>

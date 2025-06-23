@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 3 – Algorithms and Data Structure</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="header-and-footer-script.js"></script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <section class="narrative">
+    <h2>Milestone 3: Enhancement 2 - Algorithms and Data Structure</h2>
+
+    <h3>Artifact Description</h3>
+    <p>
+      The artifact selected for this category’s (Algorithms and Data Structures) enhancement was <strong>AdvisingProgram.cpp</strong>. This was a C++ console app that I created when I took CS300. The program is basically a course catalog. It reads data from a CSV file, stores the data in a Binary Search Tree (BST), then allows you to list all courses or print certain courses to get information about those courses.
+    </p>
+
+    <h3>Justification and Enhancements</h3>
+    <p>
+      I decided that this artifact was a good choice because it has the potential to serve as a strong foundation for demonstrating my knowledge of data structures and algorithms. The enhancement that I implemented was a prefix-based search feature. This lets the user retrieve all the courses that have a specific course number prefix (for example, CS). To implement this, I needed to update the binary search tree with a custom recursive traversal function that collected all the nodes that match the user-specified prefix. 
+    </p>
+    <p>
+      As part of this enhancement, I included some input validation and normalization like trimming, removing hyphens (which improves the UX), and converting all course numbers to uppercase. With this enhancement, I improved upon the original program’s functionality while demonstrating my understanding of traversal logic, string processing, and defensive programming.
+    </p>
+
+    <h3>Outcome Alignment</h3>
+    <p>
+      The enhancement for this milestone aligns well with the course outcome: <em>“Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution.”</em> It also aligns well with: <em>“Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices.”</em>
+    </p>
+    <p>
+      The new prefix search feature uses a recursive, in-order traversal of a BST to solve the problem of partially matching queries. The input normalization (trimming, casing, and hyphen removal), regex validation, and defensive logic to support clean, error-resistant operations show how this enhancement aligns well with computer science best practices and standards. No updates to my outcome-coverage plans were needed. The prefix-search enhancement is fully aligned with the originally specified outcomes.
+    </p>
+
+    <h3>Reflection on Enhancement Process</h3>
+    <p>
+      By enhancing this artifact, I have improved on my understanding of tree traversal and algorithm design. I needed to be careful and pay close attention to input conditions, edge cases, and runtime behavior when implementing the recursive search logic here. I also tested the program using a dataset that contains 400 courses. This data set included malformed and valid inputs, to ensure accuracy and resilience.
+    </p>
+    <p>
+      One challenge that I faced when enhancing this artifact was that I kept running into iterator errors when trying to trim and validate malformed strings. After doing some research on how others solve this problem, I was able to overcome this by updating my utility functions and implementing better validation and formatting logic. Even though fixing this wasn’t a direct security feature, the enhancement does mitigate iterator errors. This supports foundational secure coding practices. This experience reinforced the value of modular design and defensive programming. Overall, this enhancement is a strong upgrade to this artifact that improved upon the program’s usability while also demonstrating my knowledge and skills in algorithms and data structure.
+    </p>
+  </section>
+
+  <section id="artifact-links">
+    <h3>Download Artifacts</h3>
+    <div class="project">
+        <p>
+        <strong>Original Version:</strong><br>
+        <a href="downloads/BinarySearchTree%20(Original).cpp" download>Download BinarySearchTree (Original).cpp</a>
+        </p>
+        <p>
+        <strong>Enhanced Version:</strong><br>
+        <a href="downloads/Final%20Artifact.zip" download>Download Final Artifact (Full Enhanced Project)</a>
+        </p>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+</body>
+</html>
