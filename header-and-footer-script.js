@@ -15,9 +15,9 @@ function headerHTML() {
                 <li class="dropdown">
                     <a href="#">Enhancements ▼</a>
                     <ul class="dropdown-content">
-                        <li><a href="milestone-one.html">Enhancement One</a></li>
-                        <li><a href="milestone-two.html">Enhancement Two</a></li>
-                        <li><a href="milestone-three.html">Enhancement Three</a></li>
+                        <li><a href="enhancement-one.html">Enhancement One</a></li>
+                        <li><a href="enhancement-two.html">Enhancement Two</a></li>
+                        <li><a href="enhancement-three.html">Enhancement Three</a></li>
                     </ul>
                 </li>
                 <li><a href="index.html#contact">Contact</a></li>
